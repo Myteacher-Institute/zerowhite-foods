@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #996515;
+    
+}
+
+.Lojin{
+    display: grid;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 10%;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    border: 2px solid goldenrod;
+    color: black;
+}
+.Lojin #email{
+    display: flex;
+    
+}
