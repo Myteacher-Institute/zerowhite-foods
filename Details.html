@@ -5,37 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeroWhite Food Store</title>
     <link rel="stylesheet" href="./Assests/Css/Head.css">
+    <link rel="stylesheet" href="./Assests/Css/detail.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>ZeroWhite</h1>
-            </div>
-            
+     <header class="nav-head">
+  <nav class="navbar" id="navbar">  
+    <div class="logo">
+      <h1>ZeroWhite Food Store</h1>
+    </div>
 
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="categories.html">Product Categories</a></li>
-                <li><a href="cart.html">Shopping Cart</a></li>
-            </ul>
+    <!-- Hamburger Icon (visible on small screens) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-            <!-- Search Bar -->
-            <div class="search-container">
-                <input type="text" placeholder="Search...">
-                <button class="search-btn"><a href="2-index.html">Search</a></button>
-            </div>
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="categories.html">Product Categories</a></li>
+      <li><a href="cart.html">Shopping Cart</a></li>
+    </ul>
 
-            <!-- Auth Buttons -->
-            <div class="auth-buttons">
-                <button class="login-btn"><a href="" style="color: white;">Login</a></button>
-                <button class="signup-btn">Sign Up</button>
-            </div>
-        </nav>
-    </header>
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button class="search-btn"><a href="2-index.html">Search</a></button>
+    </div>
 
+    <!-- Auth Buttons -->
+    <div class="auth-buttons">
+      <button class="login-btn"><a href="Login.html" style="color: white;">Login</a></button>
+      <button class="signup-btn"><a href="Sign up.html">Sign Up</a></button>
+    </div>
+  </nav>
+</header>
+
+<!--content-->
+<div class="container">
+  <!-- Product Image -->
+  <div class="product-image">
+      <img src="./Assests/Pix/Product (6).webp" alt="Product Name">
+  </div>
+
+  <!-- Product Details -->
+  <div class="product-details">
+      <h1>Product Name</h1>
+
+      <p class="product-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+      </p>
+
+      <div class="product-info">
+          <p>Price: <span class="price">$99.99</span></p>
+          <p>Weight: <span class="weight">2kg</span></p>
+          <p>Availability: <span class="availability">In Stock</span></p>
+      </div>
+
+      <!-- Purchase Button -->
+      <div class="purchase-section">
+          <button class="btn-buy">Buy Now</button>
+      </div>
+  </div>
+</div>
+
+<script src="./Assests/Js/detail.js"></script>
 <script src="./Assests/Js/Head.js"></script>
 </body>
 </html>

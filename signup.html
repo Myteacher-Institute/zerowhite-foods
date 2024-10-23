@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Signup Form</title>
+  <link rel="stylesheet" href="./Assests/Css/signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <div class="input-field">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-field">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" required minlength="8" maxlength="12">
+            <span class="toggle-password" onclick="togglePassword()">&#128065;</span>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" maxlength="12">
+            <span class="toggle-password" onclick="toggleConfirmPassword()">&#128065;</span>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <button type="submit">Sign Up</button>
+        </div>
+        
+        <div class="login-link">
+          <p>Already have an account? <a href="Login.html">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./Assests/Js/signup.js"></script>
+</body>
+</html>

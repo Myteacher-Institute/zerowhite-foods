@@ -1,29 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #978e0893, #50442c);
     display: flex;
     justify-content: center;
-    align-content: center;
-    background-color: #996515;
-    
+    align-items: center;
+    height: 100vh;
 }
 
-.Lojin{
-    display: grid;
-    height: 400px;
-    border-radius: 20px;
-    margin-top: 10%;
-    width: 50%;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-    border: 2px solid goldenrod;
-    color: black;
+.login-container {
+    background: linear-gradient(135deg, #978e0893, #50442c);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
-.Lojin #email{
-    display: flex;
-    
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
 }

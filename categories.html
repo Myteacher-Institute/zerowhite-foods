@@ -1,41 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZeroWhite Food Store</title>
-    <link rel="stylesheet" href="./Assests/Css/Head.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeroWhite Food Store</title>
+  <link rel="stylesheet" href="./Assests/Css/categories.css">
+  <link rel="stylesheet" href="./Assests/Css/Head.css">
 </head>
+
 <body>
-       <!-- Header Section -->
-       <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>ZeroWhite</h1>
-            </div>
-            
+  <!-- Header Section -->
+  <header class="nav-head">
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <h1>ZeroWhite</h1>
+      </div>
 
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="categories.html">Product Categories</a></li>
-                <li><a href="Details.html">Product Detail Page</a></li>
-                <li><a href="cart.html">Shopping Cart</a></li>
-            </ul>
+      <!-- Hamburger Icon (visible on small screens) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-            <!-- Search Bar -->
-            <div class="search-container">
-                <input type="text" placeholder="Search...">
-                <button class="search-btn">Search</button>
-            </div>
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Details.html">Product Detail</a></li>
+        <li><a href="cart.html">Shopping Cart</a></li>
+      </ul>
 
-            <!-- Auth Buttons -->
-            <div class="auth-buttons">
-                <button class="login-btn"><a href="" style="color: white;">Login</a></button>
-                <button class="signup-btn">Sign Up</button>
-            </div>
-        </nav>
-    </header>
-   
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button class="search-btn"><a href="2-index.html">Search</a></button>
+      </div>
+
+      <!-- Auth Buttons -->
+      <div class="auth-buttons">
+        <button class="login-btn"><a href="Login.html" style="color: white;">Login</a></button>
+        <button class="signup-btn"><a href="signup.html">Sign Up</a></button>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </header>
+
+
+  <!-- Product Category Container -->
+  <header>
+    <h1>Product Categories</h1>
+  </header>
+
+  <section id="categories">
+    <!-- Grains Category -->
+    <div class="category">
+      <h2>Grains</h2>
+      <div class="product-grid">
+        <!-- Individual product -->
+        <div class="product-item">
+          <img src="./Assests/Pix/download (37).jfif" alt="Rice">
+          <h3>Rice</h3>
+          <p>$5.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/wheat.jpeg" alt="Wheat">
+          <h3>Wheat</h3>
+          <p>$3.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Barley.jpeg" alt="Wheat">
+          <h3>Barley</h3>
+          <p>$3.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Maize.avif" alt="Wheat">
+          <h3>Maize</h3>
+          <p>$3.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Oats.jpeg" alt="Wheat">
+          <h3>Oats</h3>
+          <p>$3.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Sorghum.jpeg" alt="Wheat">
+          <h3>Sorghum</h3>
+          <p>$3.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+      </div>
+      <!-- Add more products here -->
+    </div>
+    </div>
+
+    <!-- Vegetables Category -->
+    <div class="category">
+      <h2>Vegetables</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="./Assests/Pix/image.webp" alt="Tomato">
+          <h3>Tomato</h3>
+          <p>$1.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Broccoli.jpeg" alt="Potato">
+          <h3>Broccoli</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Spinach.jpeg" alt="Potato">
+          <h3>Spinach</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Lettuce.jpeg" alt="Potato">
+          <h3>Lettuce</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Cabbage.jpeg" alt="Cabbage">
+          <h3>Cabbage</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Carrot.jpeg" alt="Carrot">
+          <h3>Carrot</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+      </div>
+
+      <!-- Add more products here -->
+    </div>
+    </div>
+
+    <!-- fruits Category -->
+    <div class="category">
+      <h2>Fruits</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="./Assests/Pix/Apple.jpeg" alt="Apple">
+          <h3>Apple</h3>
+          <p>$1.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Add to
+              Cart</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/download (47).jfif" alt="Orange">
+          <h3>Orange</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Pineapple.jpg" alt="Pineapple">
+          <h3>Pineapple</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Banana.jpeg" alt="Banana">
+          <h3>Banana</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Pear.jpeg" alt="Pear">
+          <h3>Pear</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Mago.jpeg" alt="Mango">
+          <h3>Mango</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+      </div>
+      <!-- Add more products here -->
+    </div>
+    </div>
+
+    <!-- Drinks and Beverages Category -->
+    <div class="category">
+      <h2>Drinks and Beverages</h2>
+      <div class="product-grid"> 
+        <div class="product-item">
+          <img src="./Assests/Pix/Apple.jpeg" alt="Non-Alcohol">
+          <h3>Non-Alcoholic</h3>
+          <p>$1.00 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/download (47).jfif" alt="Orange">
+          <h3>Orange</h3>
+          <p>$0.80 per kg</p>
+          
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Pineapple.jpg" alt="Pineapple">
+          <h3>Pineapple</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Banana.jpeg" alt="Banana">
+          <h3>Banana</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Pear.jpeg" alt="Pear">
+          <h3>Pear</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+        <div class="product-item">
+          <img src="./Assests/Pix/Mago.jpeg" alt="Mango">
+          <h3>Mango</h3>
+          <p>$0.80 per kg</p>
+          <a href="cart.html.product" style="text-decoration: none; color: white;"><button class="add-to-cart">Available</button></a>
+        </div>
+      </div>
+      <!-- Add more products here -->
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="./Assests/Js/Head.js"></script>
+  <script src="./Assests/Js/categories.js"></script>
 </body>
+
 </html>

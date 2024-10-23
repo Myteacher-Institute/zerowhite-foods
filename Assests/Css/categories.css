@@ -1,74 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none
-}
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #996515;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#3E2723 ;
 }
+
 header {
-    background-color: rgb(138, 54, 15);
-    padding: 20px 20px;
-    border: 0.2rem solid #C67125;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1 {
+  margin: 0;
 }
 
-/* Logo */
-.logo h1 {
-    color: #FFd700; /* Gold accent for logo text */
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #4CAF50;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0;
 }
 
-/* Navigation Links */
-.nav-links {
-    list-style-type: none;
-    display: flex;
+/* Category Section */
+#categories {
+  /* background-color: ; */
+  padding: 2rem;
 }
 
-.nav-links li {
-    margin-right: 20px;
+.category {
+  margin-bottom: 3rem;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #FFFFFF; /* White text */
-    font-weight: bold;
+.product-grid {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
 }
 
-.nav-links a:hover {
-    color: #FFd700; /* Gold on hover */
+.product-item {
+  background-color: #DAA520;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 1rem); /* Makes 3 items per row */
+  text-align: center;
 }
 
-/* Search Bar */
-.search-container {
-    display: flex;
-    align-items: center;
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.search-container input {
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
+.product-item h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
-.search-btn {
-    background-color: #FFd700; /* Gold button */
-    color: #000;
-    padding: 7px 10px;
-    border: none;
-    border-radius: 5px;
-    margin-left: 5px;
-    cursor: pointer;
+.product-item p {
+  font-size: 1rem;
+  color: #555;
 }
 
-.search-btn:hover {
-    background-color: #daa520; /* Darker gold on hover */
+.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-item {
+      width: calc(50% - 1rem); /* Two items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+      width: 100%; /* One item per row */
+  }
+}
+
+
+
+
+.pc{
+  margin-top: 10rem;
+}
+
+.pc p{
+  text-align: left;
+  justify-content: center;
 }

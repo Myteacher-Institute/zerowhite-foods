@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>\Login</title>
-     <link rel="stylesheet" href="./Assests/Css/Login.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./Assests/Css/Login.css">
 </head>
 <body>
-    <div class="Lojin">
-        <form action="">
-        <label for="Email">Email</label><br><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="Password">Input Your Password</label><br><br>
-        <input type="password" id="password" name="password"><br><br>
-
-        <button><a href="2-index.html">Submit</a></button>
-    </form><br>
-    <button><a href="Sign up">Create An Account</a></button>
+    <div class="login-container">
+        <form class="login-form" action="/login" method="POST">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="login-btn"><a href="New.html">login</a></button>
+            <p class="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
     </div>
-    
 </body>
 </html>
