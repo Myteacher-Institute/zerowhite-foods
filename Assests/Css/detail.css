@@ -19,7 +19,9 @@
 }
 
 .product-image img {
-    max-width: 100%;
+    object-fit: fill;
+    width: 60%;
+    height: 80%;
     border-radius: 10px;
 }
 

@@ -66,7 +66,7 @@ body {
   }
   
   .nav-links a:hover {
-    color: #fff; /* Hover effect */
+    color: #fff;
   }
   
   /* Search Container */
@@ -121,7 +121,7 @@ body {
   }
   
   .auth-buttons .signup-btn {
-    background-color: #603813; /* Yellow button for Sign Up */
+    background-color: #603813; 
     color: #603813;
   }
   .login-btn:hover{
@@ -151,8 +151,8 @@ body {
 
   /* carousel style*/
 .carousel-inner img {
-    height: 500px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensures image covers the container */
+    height: 500px; 
+    object-fit: cover; 
   }
 
 /*carousel styling*/
@@ -255,7 +255,6 @@ body {
 
 .block {
   width: 30%;
-  /* Each block takes 30% of the container's width */
   margin-bottom: 20px;
   padding: 10px;
   border: 3px solid #603813;
@@ -306,16 +305,10 @@ body {
     flex: 1 1 100%;
 }
 
-/* .get-text.len{
- display: inline;
- width: 20px;
-} */
-
 img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    /* Ensures that the image is full width on smaller screens */
 }
 
 @media (min-width: 768px) {

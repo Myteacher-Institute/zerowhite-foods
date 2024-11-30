@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #e74c3c, #2c3e50);
+    background: linear-gradient(135deg, #ab8315, #a83326);
   }
   
   .container {
@@ -21,6 +21,7 @@
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
+  
   
   .signup-form h2 {
     text-align: center;

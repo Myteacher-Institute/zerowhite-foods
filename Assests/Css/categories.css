@@ -1,9 +1,19 @@
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color:#3E2723 ;
+}
+
+img{
+  object-fit: cover;
+  width: 40%;
+  height: 60%;
 }
 
 header {
@@ -37,13 +47,35 @@ h2 {
   margin-bottom: 3rem;
 }
 
-.product-grid {
- 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: space-between;
+/* General reset for links and buttons */
+a {
+  text-decoration: none;
 }
+
+button {
+  all: unset; 
+  padding: 12px 20px;
+  background-color: #28a745; 
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 4px;
+}
+
+
 
 .product-item {
   background-color: #DAA520;
@@ -96,6 +128,7 @@ h2 {
       width: 100%; /* One item per row */
   }
 }
+
 
 
 
